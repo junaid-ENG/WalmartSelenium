@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Walmart Auomation Test Suite]">
+  <listeners>
+    <listener class-name="com.qa.ExtentReport.listener.ExtentReport_listner"/>
+  </listeners>
+  <test name="Walmart Test Cases(failed)">
+    <classes>
+      <class name="com.walmart.qa.testcases.MyaccountTest">
+        <methods>
+          <include name="clickOnMyaccountlink"/>
+          <include name="setup"/>
+          <include name="clickOnmylistTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.walmart.qa.testcases.MyaccountTest -->
+    </classes>
+  </test> <!-- Walmart Test Cases(failed) -->
+</suite> <!-- Failed suite [Walmart Auomation Test Suite] -->

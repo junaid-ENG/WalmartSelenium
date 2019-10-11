@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Walmart Auomation Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Walmart_Auomation_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\Hammad\eclipse-workspace\WalmartSelenium\TestNg.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Walmart_Auomation_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Walmart_Auomation_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Walmart_Auomation_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Walmart_Auomation_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Walmart_Auomation_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Walmart_Auomation_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 1 failed,  1 skipped,  10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" class="hide-methods failed suite-Walmart_Auomation_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Walmart_Auomation_Test_Suite -->
+                      <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" class="show-methods failed suite-Walmart_Auomation_Test_Suite"> (show)</a> <!-- show-methods failed suite-Walmart_Auomation_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Walmart_Auomation_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.MyaccountTest" class="method navigator-link" hash-for-method="clickOnmylistTest">clickOnmylistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Walmart_Auomation_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" class="hide-methods skipped suite-Walmart_Auomation_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Walmart_Auomation_Test_Suite -->
+                      <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" class="show-methods skipped suite-Walmart_Auomation_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Walmart_Auomation_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Walmart_Auomation_Test_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.MyaccountTest" class="method navigator-link" hash-for-method="clickOnMyaccountlink">clickOnMyaccountlink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Walmart_Auomation_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" class="hide-methods passed suite-Walmart_Auomation_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Walmart_Auomation_Test_Suite -->
+                      <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" class="show-methods passed suite-Walmart_Auomation_Test_Suite"> (show)</a> <!-- show-methods passed suite-Walmart_Auomation_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Walmart_Auomation_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.AccountTest" class="method navigator-link" hash-for-method="ClickonSignuplinkTest">ClickonSignuplinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.SearchPageTest" class="method navigator-link" hash-for-method="EnterInputinSearchpageTest">EnterInputinSearchpageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.SearchPageTest" class="method navigator-link" hash-for-method="PaginationTest">PaginationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.MyaccountTest" class="method navigator-link" hash-for-method="clickOnAddressesTest">clickOnAddressesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.MyaccountTest" class="method navigator-link" hash-for-method="clickOnCreditcardTest">clickOnCreditcardTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.MyaccountTest" class="method navigator-link" hash-for-method="clickOnMysubscriptionsTest">clickOnMysubscriptionsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.MyaccountTest" class="method navigator-link" hash-for-method="clickOnOrderhistory">clickOnOrderhistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.MyaccountTest" class="method navigator-link" hash-for-method="clickOnRecommendationlink">clickOnRecommendationlink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.MyaccountTest" class="method navigator-link" hash-for-method="clickOnSignoutTest">clickOnSignoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Walmart_Auomation_Test_Suite" title="com.walmart.qa.testcases.MyaccountTest" class="method navigator-link" hash-for-method="clickOnpersonalsettingsTest">clickOnpersonalsettingsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Walmart_Auomation_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Walmart_Auomation_Test_Suite" class="panel Walmart_Auomation_Test_Suite">
+          <div class="suite-Walmart_Auomation_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.walmart.qa.testcases.MyaccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnmylistTest">
+                  </a> <!-- clickOnmylistTest -->
+                  <span class="method-name">clickOnmylistTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SHAH&apos;, ip: &apos;192.168.197.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191001234643, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 9168, moz:profile: C:\Users\Hammad\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa3191d4-79de-46e0-b91d-3f745a24909f
+*** Element info: {Using=xpath, value=//parent::ul[@class=&apos;nav-list marg-b-1unit&apos;]//a[text()=&apos;My Lists&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.walmart.qa.pages.Myaccount.clickOnmylist(Myaccount.java:63)
+	at com.walmart.qa.testcases.MyaccountTest.clickOnmylistTest(MyaccountTest.java:91)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Walmart_Auomation_Test_Suite-class-failed -->
+          <div class="suite-Walmart_Auomation_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.walmart.qa.testcases.MyaccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnMyaccountlink">
+                  </a> <!-- clickOnMyaccountlink -->
+                  <span class="method-name">clickOnMyaccountlink</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SHAH&apos;, ip: &apos;192.168.197.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191001234643, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 9168, moz:profile: C:\Users\Hammad\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa3191d4-79de-46e0-b91d-3f745a24909f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:448)
+	at com.walmart.qa.testcases.MyaccountTest.tearDown(MyaccountTest.java:102)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Walmart_Auomation_Test_Suite-class-skipped -->
+          <div class="suite-Walmart_Auomation_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.walmart.qa.testcases.AccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickonSignuplinkTest">
+                  </a> <!-- ClickonSignuplinkTest -->
+                  <span class="method-name">ClickonSignuplinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Walmart_Auomation_Test_Suite-class-passed -->
+          <div class="suite-Walmart_Auomation_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.walmart.qa.testcases.SearchPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnterInputinSearchpageTest">
+                  </a> <!-- EnterInputinSearchpageTest -->
+                  <span class="method-name">EnterInputinSearchpageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PaginationTest">
+                  </a> <!-- PaginationTest -->
+                  <span class="method-name">PaginationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Walmart_Auomation_Test_Suite-class-passed -->
+          <div class="suite-Walmart_Auomation_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.walmart.qa.testcases.MyaccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnAddressesTest">
+                  </a> <!-- clickOnAddressesTest -->
+                  <span class="method-name">clickOnAddressesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnCreditcardTest">
+                  </a> <!-- clickOnCreditcardTest -->
+                  <span class="method-name">clickOnCreditcardTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnMysubscriptionsTest">
+                  </a> <!-- clickOnMysubscriptionsTest -->
+                  <span class="method-name">clickOnMysubscriptionsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnOrderhistory">
+                  </a> <!-- clickOnOrderhistory -->
+                  <span class="method-name">clickOnOrderhistory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnRecommendationlink">
+                  </a> <!-- clickOnRecommendationlink -->
+                  <span class="method-name">clickOnRecommendationlink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnSignoutTest">
+                  </a> <!-- clickOnSignoutTest -->
+                  <span class="method-name">clickOnSignoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnpersonalsettingsTest">
+                  </a> <!-- clickOnpersonalsettingsTest -->
+                  <span class="method-name">clickOnpersonalsettingsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Walmart_Auomation_Test_Suite-class-passed -->
+        </div> <!-- panel Walmart_Auomation_Test_Suite -->
+        <div panel-name="test-xml-Walmart_Auomation_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Hammad\eclipse-workspace\WalmartSelenium\TestNg.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Walmart Auomation Test Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.ExtentReport.listener.ExtentReport_listner&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Walmart Test Cases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.walmart.qa.testcases.SearchPageTest&quot;/&gt;
+      &lt;class name=&quot;com.walmart.qa.testcases.MyaccountTest&quot;/&gt;
+      &lt;class name=&quot;com.walmart.qa.testcases.AccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Walmart Test Cases --&gt;
+&lt;/suite&gt; &lt;!-- Walmart Auomation Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Walmart_Auomation_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Walmart Auomation Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Walmart Test Cases (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Walmart_Auomation_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Walmart Auomation Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Walmart_Auomation_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Walmart Auomation Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Walmart_Auomation_Test_Suite');
+function tableData_Walmart_Auomation_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'PaginationTest')
+data.setCell(0, 2, 'com.walmart.qa.testcases.SearchPageTest')
+data.setCell(0, 3, 22659);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'EnterInputinSearchpageTest')
+data.setCell(1, 2, 'com.walmart.qa.testcases.SearchPageTest')
+data.setCell(1, 3, 11419);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'clickOnSignoutTest')
+data.setCell(2, 2, 'com.walmart.qa.testcases.MyaccountTest')
+data.setCell(2, 3, 8403);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'clickOnOrderhistory')
+data.setCell(3, 2, 'com.walmart.qa.testcases.MyaccountTest')
+data.setCell(3, 3, 7215);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clickOnAddressesTest')
+data.setCell(4, 2, 'com.walmart.qa.testcases.MyaccountTest')
+data.setCell(4, 3, 3895);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'clickOnMysubscriptionsTest')
+data.setCell(5, 2, 'com.walmart.qa.testcases.MyaccountTest')
+data.setCell(5, 3, 3731);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'clickOnRecommendationlink')
+data.setCell(6, 2, 'com.walmart.qa.testcases.MyaccountTest')
+data.setCell(6, 3, 3462);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ClickonSignuplinkTest')
+data.setCell(7, 2, 'com.walmart.qa.testcases.AccountTest')
+data.setCell(7, 3, 3285);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'clickOnpersonalsettingsTest')
+data.setCell(8, 2, 'com.walmart.qa.testcases.MyaccountTest')
+data.setCell(8, 3, 3238);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'clickOnCreditcardTest')
+data.setCell(9, 2, 'com.walmart.qa.testcases.MyaccountTest')
+data.setCell(9, 3, 2628);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'clickOnmylistTest')
+data.setCell(10, 2, 'com.walmart.qa.testcases.MyaccountTest')
+data.setCell(10, 3, 37);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'clickOnMyaccountlink')
+data.setCell(11, 2, 'com.walmart.qa.testcases.MyaccountTest')
+data.setCell(11, 3, 0);
+window.suiteTableData['Walmart_Auomation_Test_Suite']= { tableData: data, tableDiv: 'times-div-Walmart_Auomation_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Walmart_Auomation_Test_Suite">
+              </div> <!-- times-div-Walmart_Auomation_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Walmart_Auomation_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Walmart Auomation Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Walmart_Auomation_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Walmart_Auomation_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.walmart.qa.testcases.SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">EnterInputinSearchpageTest</span>
+                <span class="method-start">21858 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.walmart.qa.testcases.MyaccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">33284 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnRecommendationlink</span>
+                <span class="method-start">52627 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">56093 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.walmart.qa.testcases.AccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">62269 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ClickonSignuplinkTest</span>
+                <span class="method-start">78518 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.walmart.qa.testcases.SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">81806 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PaginationTest</span>
+                <span class="method-start">100906 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.walmart.qa.testcases.MyaccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">123567 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnOrderhistory</span>
+                <span class="method-start">146083 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">153300 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">156879 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnMysubscriptionsTest</span>
+                <span class="method-start">175941 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">179674 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">187192 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnpersonalsettingsTest</span>
+                <span class="method-start">205340 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">208580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">219459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnAddressesTest</span>
+                <span class="method-start">238059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">241956 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">250454 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnCreditcardTest</span>
+                <span class="method-start">275946 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">278574 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">291937 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnSignoutTest</span>
+                <span class="method-start">312495 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">320898 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">323759 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickOnmylistTest</span>
+                <span class="method-start">342388 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">342425 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

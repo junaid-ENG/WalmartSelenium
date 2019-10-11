@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Walmart Auomation Test Suite">
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReport.listener.ExtentReport_listner" />
+	</listeners>
+
+
+	<test name="Walmart Test Cases" allow-return-values="true">
+		<classes>
+			<class name="com.walmart.qa.testcases.SearchPageTest"></class>
+			<class name="com.walmart.qa.testcases.MyaccountTest"></class>
+			<class name="com.walmart.qa.testcases.AccountTest"></class>
+
+		</classes>
+	</test>
+</suite> 
+
